@@ -1,0 +1,250 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+header {
+  width: 80%;
+  margin: auto;
+}
+/* nav style */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+.menu_item li {
+  list-style: none;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* First section */
+.main_area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.text_area {
+  width: 40%;
+}
+.text_area h3 {
+  font-weight: 700;
+  font-size: 52px;
+}
+.image_area img {
+  width: 100%;
+}
+.main_image:hover {
+  transform: scale(1.1);
+}
+.btn {
+  background-color: #e02c6d;
+  border-radius: 20px;
+  padding: 5px 8px;
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+/* Popular Collection area */
+.popular_collection_area {
+  /* margin-bottom: 15px; */
+  width: 80%;
+  margin: auto;
+}
+.popular_collection_area h1 {
+  text-align: center;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+}
+.product_container {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 10px;
+}
+.product {
+  padding: 8px;
+}
+.product_banner img {
+  width: 100%;
+}
+.rating_container {
+  display: flex;
+  align-items: center;
+}
+.rating_star {
+  margin-right: 8px;
+}
+.fa-star {
+  font-size: 12px;
+}
+.filled {
+  color: gold;
+}
+.empty {
+  color: #d4bfbf;
+}
+.see_more {
+  float: right;
+  margin-top: 10px;
+}
+.see_more a {
+  text-decoration: none;
+  color: #e02c6dde;
+}
+.see_more i {
+  color: #e02c6dde;
+}
+.fas {
+  margin-right: 2px;
+}
+
+/* Top influencer */
+
+.top_influencer {
+  width: 80%;
+  margin: auto;
+}
+.top_influencer h1 {
+  text-align: center;
+}
+.top_influencer_wrapper {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px; */
+  display: flex;
+  justify-content: space-around;
+}
+.person {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  position: relative;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.person img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.bio {
+  display: none;
+  position: absolute;
+  color: #e02c6d;
+  font-weight: 700;
+  top: 35%;
+  left: 30%;
+}
+.person:hover .bio {
+  display: block;
+}
+
+/* Footer area style */
+
+footer {
+  background-color: #0a0826;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.footer_container {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+footer h3 {
+  font-size: 24px;
+}
+footer p {
+  font-size: 14px;
+}
+.fab {
+  margin-right: 5px;
+}
+
+/* Media Queries*/
+
+/* mobile divice */
+@media only screen and (max-width: 688px) {
+  header {
+    width: 95%;
+    margin: auto;
+  }
+  .logo a {
+    font-size: 16px;
+  }
+  .main_area {
+    flex-direction: column;
+  }
+  .text_area {
+    width: 100%;
+  }
+  .text_area h3 {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .image_area img {
+    width: 85%;
+  }
+  .popular_collection_area {
+    width: 95%;
+    margin: auto;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .top_influencer_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top_influencer h1 {
+    text-align: center;
+  }
+}
+
+/* tablet device */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .logo a {
+    font-size: 20px;
+  }
+
+  .text_area h3 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .image_area img {
+    width: 85%;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+  }
+  .top_influencer_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top_influencer h1 {
+    text-align: center;
+  }
+}
